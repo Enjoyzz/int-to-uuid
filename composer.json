@@ -3,7 +3,7 @@
     "description": "Utility for Bidirectional Conversion of Integer Ids to UUIDs",
     "type": "library",
     "require": {
-        "php": "^8.2",
+        "php": "^8.1",
         "ramsey/uuid": "^4.7"
     },
     "require-dev": {

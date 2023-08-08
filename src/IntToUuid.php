@@ -9,7 +9,7 @@ use LogicException;
 use Ramsey\Uuid\Uuid;
 use Ramsey\Uuid\UuidInterface;
 
-final readonly class IntToUuid
+final class IntToUuid
 {
     public const VALIDATION_REGEX = '/^[0-9a-f]{8}-[0-9a-f]{4}-8[0-9a-f]{3}-[ab89][0-9a-f]{3}-[0-9a-f]{12}$/';
 

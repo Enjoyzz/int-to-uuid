@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace PhoneBurner\IntToUuid;
 
-final readonly class IntegerId
+final class IntegerId
 {
     public const ID_MIN = 0;
 
@@ -21,8 +21,8 @@ final readonly class IntegerId
      * @phpstan-assert int<0,4294967295> $namespace
      */
     private function __construct(
-        public int $value,
-        public int $namespace,
+        public readonly int $value,
+        public readonly int $namespace,
     ) {
         if ($this->value < self::ID_MIN) {
             throw new \InvalidArgumentException(\vsprintf(self::ERROR_TEMPLATE, [

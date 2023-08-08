@@ -1,7 +1,7 @@
 SHELL := bash
 
-dcr = docker compose run --rm php82
-dcrx = docker compose run --rm php82-xdebug
+dcr = docker compose run --rm php81
+dcrx = docker compose run --rm php81-xdebug
 
 .PHONY: build
 build:
@@ -38,7 +38,7 @@ psysh:
 phpcs:
 	@$(dcr) vendor/bin/phpcs
 
-.PHONY: phpcs
+.PHONY: phpcbf
 phpcbf:
 	@$(dcr) vendor/bin/phpcbf
 
